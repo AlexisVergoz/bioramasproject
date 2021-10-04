@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    background-color: #f8f4ed;
+    color: #334a3f;
+}
+.navbar-color{
+    background-color: #f8f4ed;
+}
+.navbar-item-custom a, .navbar-item-custom{
+    color: #334a3f;
+}
+.footer-custom{
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #f8f4ed;
+    padding-top: 25px;
+}
