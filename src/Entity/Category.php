@@ -25,7 +25,7 @@ class Category
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Product::class, mappedBy="category")
+     * @ORM\OneToMany(targetEntity=Product::class, mappedBy="Category")
      */
     private $products;
 
@@ -33,6 +33,12 @@ class Category
     {
         $this->products = new ArrayCollection();
     }
+
+    public function __toString()
+    {
+        return $this->getName();
+    }
+
 
     public function getId(): ?int
     {

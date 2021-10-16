@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bioramas - Nos produits{% endblock %}
+
+{% block content %}
+<h1>Nos produits</h1>
+<div class="row">
+{% for product in products %}
+    <div class="col-md-4">
+        <div class="product-item text-center">
+            <img src="/uploads/{{product.illustration}}" alt='product.name' class="img-fluid">
+                <h4>{{product.name}}</h4>
+                <span>{{ product.subtitle}}</span>
+                {{product.price}}
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

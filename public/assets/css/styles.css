@@ -22,3 +22,7 @@ body{
     background-color: #f8f4ed;
     padding-top: 25px;
 }
+.product-item h4{
+    text-transform: uppercase;
+    font-size: 15px;
+}
