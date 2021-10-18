@@ -7,6 +7,7 @@ body{
     font-family: 'Mulish', sans-serif;
     background-color: #f8f4ed;
     color: #334a3f;
+    position: relative;
 }
 .navbar-color{
     background-color: #f8f4ed;
@@ -17,7 +18,7 @@ body{
 .footer-custom{
     text-align: center;
     bottom: 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     background-color: #f8f4ed;
     padding-top: 25px;
@@ -25,4 +26,23 @@ body{
 .product-item h4{
     text-transform: uppercase;
     font-size: 15px;
+    margin-bottom: 1px;
+}
+.product-item{
+    margin-top: 50px;
+}
+.product-item .product-subtitle{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+.product-item .product-price{
+    font-size: 15px;
+    font-weight: bold;
+}
+.product-container{
+    margin-bottom: 150px;
+} 
+.product-page-price{
+    font-size: 19px;
 }
