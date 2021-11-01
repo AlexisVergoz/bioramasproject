@@ -17,8 +17,7 @@ body{
 }
 .footer-custom{
     text-align: center;
-    bottom: 0;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     background-color: #f8f4ed;
     padding-top: 25px;
