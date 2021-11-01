@@ -21,6 +21,7 @@ body{
     width: 100%;
     background-color: #f8f4ed;
     padding-top: 25px;
+    margin-top: 50px;
 }
 .product-item h4{
     text-transform: uppercase;
@@ -44,4 +45,8 @@ body{
 } 
 .product-page-price{
     font-size: 19px;
+}
+.icone{
+    padding-left: 20px;
+    font-size: 20px;
 }

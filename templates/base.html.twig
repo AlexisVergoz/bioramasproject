@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.css')}}">
 
     <style>
         .bd-placeholder-img {
@@ -59,6 +60,9 @@
                     <a href="{{ path('app_login')}}">Connection</a>|<a href="{{ path('register')}}">Inscription</a>
                 {% endif %}
             </div>
+            <a href="{{ path('cart')}}">
+                <i class="las la-shopping-cart icone"></i>
+            </a>
         </div>
     </nav>
 </header>
