@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bioramas - Valider ma commande{% endblock %}
+
+{% block content %}
+    <h2>Je passe ma commande</h2>
+    <p>Choisissez vos préférences avant de passer votre commande sur Bioramas.fr</p>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            {% set formHtml %}
+                {{ form(form) }}
+            {% endset %}
+            {{ formHtml|replace({'[br]' : '<br/>'})|raw }}
+            <b>Choissir mon transporteur</b>
+        </div>
+        <div class="col-md-6">
+            <b>Récapitulation de ma commande</b><br/>
+            <b>Bouton pour payer</b>
+        </div>
+    </div>
+
+{% endblock %}
