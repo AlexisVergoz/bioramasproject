@@ -60,7 +60,7 @@ class Adress
 
     public function __toString()
     {
-        return $this->getLastname().' '.$this->getFirstname().'[br]'.$this->getAddress().' - '.$this->getCity();
+        return $this->getLastname().' '.$this->getFirstname().'[br]'.$this->getAddress().', '.$this->getPostal().', '.$this->getCity();
     }
 
     public function getId(): ?int
