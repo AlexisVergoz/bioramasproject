@@ -1,5 +1,4 @@
 {% extends 'base.html.twig' %}
-
 {% block title %}Bioramas - Paiement de ma commande{% endblock %}
 
 {% block content %}
@@ -51,7 +50,7 @@
                 <strong>Livraison: </Strong> {{ ( carrier.price) | number_format(2, ',','.') }}€
                 <hr>
                 <strong>Total: </strong> {{ (( total / 100) + 5) | number_format(2, ',','.') }}€
-                <a href="" class="btn btn-info btn-block mt-3">Payer {{ (( total / 100) + 5) | number_format(2, ',','.') }}€</a>
+                <a class="btn btn-info btn-block mt-3" id="checkout-button">Payer {{ (( total / 100) + 5) | number_format(2, ',','.') }}€</a>
             </div>
         </div>
     </div>

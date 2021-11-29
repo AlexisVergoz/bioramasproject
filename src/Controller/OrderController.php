@@ -7,8 +7,6 @@ use App\Entity\Order;
 use App\Entity\OrderDetails;
 use App\Form\OrderType;
 use DateTimeImmutable;
-use Stripe\Checkout\Session;
-use Stripe\Stripe;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -93,41 +91,13 @@ class OrderController extends AbstractController
                 $orderDetails->setQuantity($product['quantity']);
                 $orderDetails->setPrice($product['product']->getPrice());
                 $orderDetails->setTotal($product['product']->getPrice() * $product['quantity']);
-                $this->entityManager->persist($orderDetails);
+                $this->entityManager->persist($orderDetails); 
             }
-
             // $this->entityManager->flush();
-
-            Stripe::setApiKey('sk_test_51JyjlpAD1MNtxpfLZXRoZNsVoFyeovQzu0oJBh9GdpjTnY3RaQ7gEMb8ezS2IyqtdGU7XDcOa9ubI30my7ISvYqw00Os9aul88');
-            $YOUR_DOMAIN = 'http://localhost:127.0.0.1:8000';
-
-            $checkout_session = Session::create([
-
-                'line_items' => [[
-
-                    # Provide the exact Price ID (e.g. pr_1234) of the product you want to sell
-
-                    'price' => '{{PRICE_ID}}',
-
-                    'quantity' => 1,
-
-                ]],
-
-                'mode' => 'payment',
-
-                'success_url' => $YOUR_DOMAIN . '/success.html',
-
-                'cancel_url' => $YOUR_DOMAIN . '/cancel.html',
-
-            ]);
-
-            dump($checkout_session->id);
-            dd($checkout_session);
-
             return $this->render('order/add.html.twig', [
                 'cart' => $cart->getFull(),
                 'carrier' => $carriers,
-                'delivery' => $delivery_content
+                'delivery' => $delivery_content,
             ]);
         }
 
