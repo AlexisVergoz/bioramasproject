@@ -6,8 +6,23 @@
     <h1>Mon Compte</h1>
     <p>Bienvenue {{app.user.firstname}} dans votre compte.</p><p> C'est dans cette espace que vous allez pouvoir gérer toutes vos informations personnelles.</p>
     <hr>
-    <a href="{{ path('account_password')}}">- Modifier mon mot de passe</a><br/>
-    <a href="{{ path('account_adress')}}">- Gérer mes adresses</a><br/>
-    - Mes commandes<br/>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="account-item">
+                {% if is_granted ('ROLE_ADMIN') %}
+    <a href="/admin"> Accéder au backoffice.</a><br/>
+    {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="account-item">
+                <a href="{{ path('account_password')}}"> Modifier mon mot de passe.</a><br/>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="account-item">
+            <a href="{{ path('account_adress')}}"> Gérer mes adresses.</a><br/>
+            </div>
+    </div>
 
 {% endblock %}
