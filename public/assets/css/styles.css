@@ -1,7 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: 'Mulish', sans-serif;
@@ -9,13 +9,13 @@ body{
     color: #334a3f;
     position: relative;
 }
-.navbar-color{
+.navbar-color {
     background-color: #f8f4ed;
 }
-.navbar-item-custom a, .navbar-item-custom{
+.navbar-item-custom a, .navbar-item-custom {
     color: #334a3f;
 }
-.footer-custom{
+.footer-custom {
     text-align: center;
     /* position: absolute; */
     width: 100%;
@@ -23,53 +23,53 @@ body{
     padding-top: 25px;
     margin-top: 50px;
 }
-.product-item h4{
+.product-item h4 {
     text-transform: uppercase;
     font-size: 15px;
     margin-bottom: 1px;
 }
-.product-item{
+.product-item {
     margin-top: 50px;
 }
-.product-item .product-subtitle{
+.product-item .product-subtitle {
     font-size: 14px;
     display: block;
     margin-bottom: 5px;
 }
-.product-item .product-price{
+.product-item .product-price {
     font-size: 15px;
     font-weight: bold;
 }
-.product-container{
+.product-container {
     margin-bottom: 150px;
 } 
-.product-page-price{
+.product-page-price {
     font-size: 19px;
 }
-.icone{
+.icone {
     padding-left: 20px;
     font-size: 20px;
 }
-.block-small{
+.block-small {
     max-width: 600px;
     margin: 0 auto;
 }
-.form-group{
+.form-group {
     padding: 20px;
     margin-top: 7px;
 }
-.col-form-label{
+.col-form-label {
     font-weight: bold;
 }
-.order-summary{
+.order-summary {
     padding: 20px;
     margin-top: 20px;
 }
-.account-item{
+.account-item {
     background-color: #f8f4ed;
     padding: 70px;
 }
-.account-item a{
+.account-item a {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
