@@ -106,17 +106,11 @@
     "guzzlehttp/psr7": {
         "version": "2.1.0"
     },
-    "hamcrest/hamcrest-php": {
-        "version": "v2.0.1"
-    },
     "laminas/laminas-code": {
         "version": "3.4.1"
     },
     "mailjet/mailjet-apiv3-php": {
         "version": "v1.5.5"
-    },
-    "mockery/mockery": {
-        "version": "1.4.4"
     },
     "monolog/monolog": {
         "version": "2.3.5"
@@ -141,9 +135,6 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.5.0"
-    },
-    "phpspec/prophecy": {
-        "version": "1.14.0"
     },
     "phpunit/php-code-coverage": {
         "version": "9.2.7"
